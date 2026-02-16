@@ -1,169 +1,206 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shahzad Hussain Portfolio</title>
-<link rel="stylesheet" href="style.css">
-<script defer src="app.js"></script>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Shahzad Hussain — Orthotist & Prosthetist</title>
+  <meta name="description" content="Professional portfolio of Shahzad Hussain — Orthotist & Prosthetist. Experience, education, skills, and contact." />
+  <meta property="og:title" content="Shahzad Hussain — Orthotist & Prosthetist" />
+  <meta property="og:description" content="Experience, education, skills, and contact." />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="app.js"></script>
 </head>
-
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<header class="topbar">
-<div class="container topbar__inner">
+  <header class="topbar" id="top">
+    <div class="container topbar__inner">
+      <a class="brand" href="#top">
+        <span class="brand__mark" aria-hidden="true">SH</span>
+        <span class="brand__text">
+          <strong id="name">Shahzad Hussain</strong>
+          <small id="title">Orthotist & Prosthetist</small>
+        </span>
+      </a>
 
-<div class="brand">
-<span class="brand__mark">SH</span>
-<div class="brand__text">
-<strong>Shahzad Hussain</strong>
-<small>Orthotist & Prosthetist</small>
-</div>
-</div>
+      <nav class="nav" id="nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-<nav class="nav">
-<a href="#about">About</a>
-<a href="#experience">Experience</a>
-<a href="#education">Education</a>
-<a href="#skills">Skills</a>
-<a href="#contact">Contact</a>
-</nav>
+      <div class="actions">
+        <button class="iconbtn" id="themeBtn" aria-label="Toggle theme" title="Toggle theme">
+          <span class="iconbtn__dot" aria-hidden="true"></span>
+        </button>
+        <button class="iconbtn iconbtn--menu" id="menuBtn" aria-label="Open menu" aria-expanded="false" aria-controls="nav">
+          <span class="iconbtn__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-</div>
-</header>
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="hero__copy">
+          <div class="pill">Available • On-site & Outreach</div>
+          <h1 class="hero__h">Hello, I’m <span class="grad" id="name2">Shahzad Hussain</span>.</h1>
 
-<!-- HERO SECTION -->
-<section class="hero">
-<div class="container hero__grid">
+          <!-- TAGLINE REMOVED (EMPTY) -->
+          <p class="hero__p" id="tagline"></p>
 
-<div class="hero__copy">
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Contact Me</a>
+            <a class="btn btn--ghost" href="Shahzad-Hussain-CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
 
-<div class="pill">Available • On-site & Outreach</div>
+          <div class="hero__meta">
+            <div class="metaCard">
+              <span class="metaCard__k">Phone</span>
+              <a class="metaCard__v" id="phone" href="tel:+923066307972">+92 306 6307972</a>
+            </div>
+            <div class="metaCard">
+              <span class="metaCard__k">Email</span>
+              <a class="metaCard__v" id="email" href="mailto:shahzdriaz72@gmail.com">shahzdriaz72@gmail.com</a>
+            </div>
+          </div>
+        </div>
 
-<h1 class="hero__h">
-Hello, I’m <span class="grad">Shahzad Hussain</span>.
-</h1>
+        <div class="hero__card">
+          <div class="profile">
+            <div class="profile__imgWrap">
+              <img class="profile__img" src="profile.jpg" alt="Profile photo" />
+            </div>
+            <div class="profile__info">
+              <h2 class="profile__name" id="name3">Shahzad Hussain</h2>
+              <p class="muted" id="objective"></p>
+              <div class="chips" id="langs"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<!-- TAGLINE REMOVED -->
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head">
+          <h2>About</h2>
+          <p class="muted">A quick summary of who I am and what I do.</p>
+        </div>
 
-<div class="hero__cta">
-<a class="btn btn--primary" href="#contact">Contact Me</a>
-<a class="btn btn--ghost" href="Shahzad-Hussain-CV.pdf" target="_blank">Download CV</a>
-</div>
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>About Me</h3>
+            <p class="muted">
+              Professional Orthotist &amp; Prosthetist with experience in rehabilitation, assessment, casting, alignment and patient care. Dedicated to improving patient mobility and quality of life through advanced orthotic and prosthetic solutions.
+            </p>
+          </div>
 
-<div class="hero__meta">
+          <div class="card reveal">
+            <h3>Focus Areas</h3>
+            <ul class="list">
+              <li>Assessment, casting, modification & molding</li>
+              <li>Bench and dynamic alignment</li>
+              <li>Center management & patient records</li>
+              <li>Follow-up care and continuous improvement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<div class="metaCard">
-<span class="metaCard__k">Phone</span>
-<span class="metaCard__v">+92 306 6307972</span>
-</div>
+    <!-- EXPERIENCE -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head">
+          <h2>Experience</h2>
+          <p class="muted">A timeline of roles and clinical practice.</p>
+        </div>
+        <div class="timeline" id="xp"></div>
+      </div>
+    </section>
 
-<div class="metaCard">
-<span class="metaCard__k">Email</span>
-<span class="metaCard__v">shahzdriaz72@gmail.com</span>
-</div>
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head">
+          <h2>Education</h2>
+          <p class="muted">Academic background and results.</p>
+        </div>
+        <div class="cards3" id="edu"></div>
+      </div>
+    </section>
 
-</div>
-</div>
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head">
+          <h2>Skills</h2>
+          <p class="muted">Professional strengths and tools.</p>
+        </div>
+        <div class="cards3" id="skillsGrid"></div>
+        <div class="card reveal" style="margin-top:16px">
+          <h3>References</h3>
+          <p class="muted">Available upon request. (Listed in CV)</p>
+        </div>
+      </div>
+    </section>
 
-<div class="hero__card">
-<div class="profile">
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head">
+          <h2>Contact</h2>
+          <p class="muted">Let’s connect. I usually respond quickly.</p>
+        </div>
 
-<div class="profile__imgWrap">
-<img class="profile__img" src="profile.jpg">
-</div>
+        <div class="grid2">
+          <div class="card reveal">
+            <h3>Details</h3>
+            <div class="kv">
+              <span class="kv__k">Phone</span><a class="kv__v" id="phone2" href="#">—</a>
+              <span class="kv__k">Email</span><a class="kv__v" id="email2" href="#">—</a>
+              <span class="kv__k">Temporary</span><span class="kv__v" id="tempAddr">—</span>
+              <span class="kv__k">Permanent</span><span class="kv__v" id="permAddr">—</span>
+            </div>
+            <div class="row" style="margin-top:14px">
+              <a class="btn btn--primary" id="mailBtn" href="#">Email Me</a>
+              <a class="btn btn--ghost" id="callBtn" href="#">Call</a>
+            </div>
+          </div>
 
-<h2 class="profile__name">Shahzad Hussain</h2>
-<p class="muted">Orthotist & Prosthetist</p>
+          <form class="card form reveal" id="contactForm">
+            <h3>Quick Message</h3>
+            <p class="muted small">This form opens your email app (no server needed).</p>
+            <label>Your Name
+              <input required name="fromName" placeholder="e.g. Ali Ahmed" />
+            </label>
+            <label>Your Email
+              <input required type="email" name="fromEmail" placeholder="you@example.com" />
+            </label>
+            <label>Message
+              <textarea required name="message" placeholder="How can I help you?"></textarea>
+            </label>
+            <button class="btn btn--primary" type="submit">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
 
-</div>
-</div>
-
-</div>
-</section>
-
-<!-- ABOUT -->
-<section id="about" class="section">
-<div class="container">
-<h2>About Me</h2>
-<p>
-Professional Orthotist & Prosthetist with experience in rehabilitation,
-assessment, casting, alignment and patient care. Dedicated to improving
-patient mobility and quality of life through advanced orthotic and prosthetic solutions.
-</p>
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-<div class="container">
-<h2>Experience</h2>
-
-<div class="card">
-<h3>Orthotist & Prosthetist</h3>
-<p>Engro Fertilizer NRSP Limb Center (2024 - Present)</p>
-</div>
-
-<div class="card">
-<h3>Rehabilitation Centers Experience</h3>
-<p>Banoor Rehab • Focus Rehab • AFIRM • NIRM</p>
-</div>
-
-</div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section">
-<div class="container">
-<h2>Education</h2>
-
-<div class="card">
-<h3>BSc Orthotics & Prosthetics</h3>
-<p>Rawalpindi Medical University</p>
-</div>
-
-<div class="card">
-<h3>FSc & Matric</h3>
-<p>Punjab Board</p>
-</div>
-
-</div>
-</section>
-
-<!-- SKILLS -->
-<section id="skills" class="section">
-<div class="container">
-<h2>Skills</h2>
-
-<ul>
-<li>Patient Assessment</li>
-<li>Prosthetics & Orthotics</li>
-<li>Rehabilitation Care</li>
-<li>Communication Skills</li>
-<li>MS Office</li>
-</ul>
-
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="section">
-<div class="container">
-<h2>Contact</h2>
-
-<p>Phone: +92 306 6307972</p>
-<p>Email: shahzdriaz72@gmail.com</p>
-
-<a class="btn btn--primary" href="mailto:shahzdriaz72@gmail.com">Email Me</a>
-
-</div>
-</section>
-
-<footer class="footer">
-<div class="container">
-<p>© 2026 Shahzad Hussain Portfolio</p>
-</div>
-</footer>
-
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">© <span id="year"></span> Shahzad Hussain. Built with a lightweight, fast static stack.</p>
+        <a class="muted link" href="#top">Back to top ↑</a>
+      </div>
+    </footer>
+  </main>
 </body>
 </html>
